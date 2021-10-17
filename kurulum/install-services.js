@@ -3,8 +3,8 @@ const path = require('path');
 
 var svc = new Service
 ({
-    name:'NitroGen DBT',
-    description: 'NitroGen DBT Server.',
+    name:'DeletePlus',
+    description: 'DeletePlus',
     script: path.join(process.cwd(), '..\\server.js'),
     env: 
     [
