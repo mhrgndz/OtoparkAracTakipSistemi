@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Vip Otomobilcilik</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="theme/dist/assets/images/favicon.ico">
+        <link href="theme/dist/assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+        <link href="theme/dist/assets/libs/selectize/css/selectize.bootstrap3.css" rel="stylesheet" type="text/css" />
+        <link href="theme/dist/assets/css/bootstrap-material.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+        <link href="theme/dist/assets/css/app-material.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+        <link href="theme/dist/assets/css/bootstrap-material-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+        <link href="theme/dist/assets/css/app-material-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet"  disabled />
+        <link href="theme/dist/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="theme/dist/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+        <link href="dev/css/dx.common.css" rel="stylesheet" type="text/css">
+        <link href="dev/css/dx.light.css" rel="stylesheet" type="text/css" >
+    </head>
+
+    <body ng-controller = "main" ng-init = "New()" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+        <div id="wrapper">
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+                        <li class="dropdown d-none d-lg-inline-block">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="fullscreen" href="#">
+                                <i class="fe-maximize noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="dropdown notification-list topbar-dropdown">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="theme/img/Admin.png" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    {{UserName}} <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <a href="index.html" class="dropdown-item notify-item">
+                                    <i class="fe-log-out"></i>
+                                    <span>Çıkış</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="logo-box">
+                        <a href = "#!" class="logo logo-dark text-center">
+                            <span class="logo-sm">
+                                <img src="theme/dist/assets/images/logo-sm.png" alt="" height="22">
+                                <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-lg">
+                                <img src="theme/dist/assets/images/logo-dark.png" alt="" height="20">
+                                <!-- <span class="logo-lg-text-light">U</span> -->
+                            </span>
+                        </a>
+    
+                        <a href = "#!" class="logo logo-light text-center">
+                            <span class="logo-sm">
+                                <img src="theme/dist/assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="theme/img/vip-logo-beyaz.png" alt="" height="50">
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                        <li>
+                            <button class="button-menu-mobile waves-effect waves-light">
+                                <i class="fe-menu"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <!-- Mobile menu toggle (Horizontal Layout)-->
+                            <a class="navbar-toggle nav-link" data-toggle="collapse" data-target="#topnav-menu-content">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+            <div class="left-side-menu">
+                <div class="h-100" data-simplebar>
+                    <div class="user-box text-center">
+                        <img src="theme/dist/assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme"
+                            class="rounded-circle avatar-md">
+                        <div class="dropdown">
+                            <a href="javascript: void(0);" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block"
+                                data-toggle="dropdown">Geneva Kennedy</a>
+                            <div class="dropdown-menu user-pro-dropdown">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-user mr-1"></i>
+                                    <span>My Account</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-settings mr-1"></i>
+                                    <span>Settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-lock mr-1"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="fe-log-out mr-1"></i>
+                                    <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </div>
+                        <p class="text-muted">Admin Head</p>
+                    </div>
+                    <div id="sidebar-menu">
+                        <ul id="side-menu">
+                            <li>
+                                <a ng-href="#!" data-toggle="collapse">
+                                    <i class="mdi mdi-cellphone-link"></i>
+                                    <span> Ana Sayfa </span>
+                                </a>
+                            </li>
+                            <li class="menu-title mt-2">Araç Hareketleri</li>
+                            <li>
+                                <a ng-href="#!aracgiris" data-toggle="collapse">
+                                    <i class="mdi mdi-car-arrow-left"></i>
+                                    <span> Araç Giriş </span>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-href="#!araccikis" data-toggle="collapse">
+                                    <i class="mdi mdi-car-arrow-right"></i>
+                                    <span> Araç Çıkış </span>
+                                </a>
+                            </li>
+                            <li class="menu-title mt-2">Raporlar</li>
+                            <li>
+                                <a href="#!hareketraporlari">
+                                    <i class="mdi mdi-calendar"></i>
+                                    <span> Hareket Raporları </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div ng-view></div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                &copy; Powered by <a href="http://deleteplus.com/">DeletePlus</a> 
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="theme/dist/assets/js/vendor.min.js"></script>
+        <script src="theme/dist/assets/libs/flatpickr/flatpickr.min.js"></script>
+        <script src="theme/dist/assets/libs/selectize/js/standalone/selectize.min.js"></script>
+        <script src="theme/dist/assets/js/app.min.js"></script>
+        <script src="theme/sweetalert.min.js"></script>
+        <!-- DX JS File -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/20.2.5/js/dx.all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.1.1/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+
+        <!-- DATAPICKER -->
+        <script src="theme/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="theme/bootstrap-datepicker/bootstrap-datepicker.tr.min.js"></script>
+        
+        <!-- DBT -->
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <script src="js/lib/moment-with-locales.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
+        <script src="js/lib/socket.io.js"></script>
+        <script src="js/lib/ui-bootstrap-tpls.js"></script>
+
+        <script src="js/ctrl/index.js"></script>
+        <script src="js/ctrl/main.js"></script>
+        <script src="js/ctrl/aracgiris.js"></script>
+        <script src="js/ctrl/araccikis.js"></script>
+        <script src="js/ctrl/hareketraporlari.js"></script>
+
+        <script src="js/service.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/query.js"></script>
+        <script src="js/param.js"></script>
+
+    </body>
+</html>

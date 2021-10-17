@@ -1,0 +1,59 @@
+<div ng-controller = "hareketraporlari" ng-init = "New()">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">HAREKET RAPORLARI</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 px-0">
+            <div class="card">
+                <div class="card-body px-2 py-2">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-sm-12 mt-2">
+                            <div class="input-group input-group-icon">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-calendar-alt" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="StartDate" type="text" ng-model="StartDate" data-provide="datepicker">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-12 mt-2">
+                            <div class="input-group input-group-icon">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-calendar-alt" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="FinshDate" type="text" ng-model="FinshDate" data-provide="datepicker">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 mt-2">
+                            <button type="button" ng-click = "BtnCalistir()" class="btn btn-block btn-success waves-effect waves-light">Çalıştır</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 px-0">
+            <div class="card">
+                <div class="card-body px-2">
+                    <div id = "TblHareketList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#StartDate").datepicker({
+    language: "tr"
+    });
+    $("#FinshDate").datepicker({
+    language: "tr"
+    });
+</script>

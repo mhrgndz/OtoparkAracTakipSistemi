@@ -1,0 +1,33 @@
+Android studio kurduk.Android studio içerisinde sdk kurulumunu yaptık
+
+
+https://cordova.apache.org/#getstarted 
+
+gittik
+
+d altında cordova klasörü açtık açtığımız klasör içinde 
+
+install -g cordova
+
+kurduk
+
+cordova create ("Proje İsmi") vererek kurulumu gerçekleştirdik
+
+oluşturmuş olduğumuz cordova projesinin içine girerek hangi platformda kullanacaksak
+
+cordova platform add ("Android") kurulumunu gerçekleştirdik
+
+
+Gridle işlemleri için >
+https://www.oracle.com/tr/java/technologies/javase/javase8u211-later-archive-downloads.html
+https://gradle.org/next-steps/?version=6.9.1&format=bin
+
+Grandle zip çıkarıp C içerisine attık
+
+Denetim masası > sistem > Gelişmiş sistem ayarları > Ortam Değişkenleri
+
+Sistem Değişkenlerilerine 
+DEĞİŞKEN ADI : ANDROID_SDK_ROOT - C:\Users\mhrgn\AppData\Local\Android\Sdk
+
+Kullanıcı Değişkenleri
+Path > C:\Program Files\Java\jdk1.8.0_291\bin - C:\gradle-6.9.1\bin

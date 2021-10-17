@@ -1,0 +1,14 @@
+INSTALL MODULE
+https://nodejs.org/download/release/v14.14.0/
+npm install express
+npm install socket.io@2.3.0
+npm install express-session
+npm install body-parser
+npm install cookie-parser
+npm install ejs
+npm install mssql
+npm install moment
+npm install msnodesqlv8
+npm install node-machine-id
+npm install node-windows
+

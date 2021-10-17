@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Vip Otomobilcilik</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="theme/dist/assets/images/favicon.ico">
+		<!-- App css -->
+		<link href="theme/dist/assets/css/bootstrap-material.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+        <link href="theme/dist/assets/css/app-material.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+        <link href="theme/dist/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+		<link href="theme/dist/assets/css/bootstrap-material-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+		<link href="theme/dist/assets/css/app-material-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet"  disabled />
+		<!-- icons -->
+		<link href="theme/dist/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body class="authentication-bg authentication-bg-pattern" ng-controller = "index" ng-init = "New()">
+        <div class="account-pages mt-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-pattern">
+                            <div class="card-body p-4">
+                                <div class="text-center w-75 m-auto">
+                                    <div class="auth-logo">
+                                        <a href="index.html" class="logo logo-dark text-center">
+                                            <span class="logo-lg">
+                                                <img src="theme/img/vip-logo.png" alt="" height="50">
+                                            </span>
+                                        </a>
+                                        <a href="index.html" class="logo logo-light text-center">
+                                            <span class="logo-lg">
+                                                <img src="theme/img/vip-logo-beyaz.png" alt="" height="50">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label for="emailaddress">Kullanıcı</label>
+                                        <input class="form-control" ng-model = "User" type="text">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="password">Şifre</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="password" ng-model = "Password" class="form-control">
+                                            <div class="input-group-append" data-password="false">
+                                                <div class="input-group-text">
+                                                    <span class="password-eye"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <!-- <div class="form-group mb-3">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked>
+                                            <label class="custom-control-label" for="checkbox-signin">Beni Hatırla</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group mb-0 text-center">
+                                        <button class="btn btn-lg btn-primary btn-block" ng-click = "BtnLogin()" type="submit"> Giriş </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor js -->
+        <script src="theme/dist/assets/js/vendor.min.js"></script>
+        <!-- App js -->
+        <script src="theme/dist/assets/js/app.min.js"></script>
+        <script src="theme/dist/assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        <script src="theme/dist/assets/js/pages/sweet-alerts.init.js"></script>
+
+        <!-- DBT -->
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <script src="js/lib/moment-with-locales.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
+        <script src="js/lib/socket.io.js"></script>
+        <script src="js/lib/ui-bootstrap-tpls.js"></script>
+
+        <script src="js/ctrl/index.js"></script>
+        <script src="js/ctrl/main.js"></script>
+        <script src="js/ctrl/aracgiris.js"></script>
+        <script src="js/ctrl/araccikis.js"></script>
+        <script src="js/ctrl/hareketraporlari.js"></script>
+        
+        <script src="js/service.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/query.js"></script>
+        <script src="js/param.js"></script>
+    </body>
+</html>

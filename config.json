@@ -1,0 +1,8 @@
+{
+    "server":"192.168.1.39",
+    "database":"DELETEPLUS",
+    "uid":"deleteplus",
+    "pwd":"12345",
+    "port" : "80",
+    "trustedConnection" : false
+}

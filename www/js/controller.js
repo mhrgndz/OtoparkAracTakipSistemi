@@ -1,0 +1,6 @@
+angular.module('app.controller', [])
+.controller('index',['$scope','$rootScope','$window','srv','$route',index])
+.controller('main',['$scope','$rootScope','$window','srv','$route',main])
+.controller('aracgiris',['$scope','$rootScope','$window','srv','$route',aracgiris])
+.controller('araccikis',['$scope','$rootScope','$window','srv','$route',araccikis])
+.controller('hareketraporlari',['$scope','$rootScope','$window','srv','$route',hareketraporlari])

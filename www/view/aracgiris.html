@@ -1,0 +1,92 @@
+<div ng-controller = "aracgiris" ng-init = "New()">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">ARAÇ GİRİŞİ</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 px-0">
+            <div class="card">
+                <div class="card-body px-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accordion custom-accordion" id="custom-accordion-one">
+                                <div class="card mb-0">
+                                    <div class="card-header" id="headingNine">
+                                        <h5 class="m-0 position-relative">
+                                            <a class="custom-accordion-title text-reset d-block"data-toggle="collapse" target="self" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Şase No: {{SaseNo}}<i class="mdi mdi-chevron-down accordion-arrow"></i>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseNine" class="collapse"aria-labelledby="headingFour"data-parent="#custom-accordion-one">
+                                        <div class="card-body p-2">
+                                            <div class="row">
+                                                <div class="col-12 px-1">
+                                                    <div class="form-group px-0">
+                                                        <input type="text" class="form-control" ng-model = "SaseNo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card mb-0">
+                                    <div class="card-header" id="headingFive">
+                                        <h5 class="m-0 position-relative">
+                                            <a class="custom-accordion-title text-reset collapsed d-block"data-toggle="collapse" href="#collapseFive" target="self"aria-expanded="false" aria-controls="collapseFive">Fotoğraf<i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFive" class="collapse"aria-labelledby="headingFive"data-parent="#custom-accordion-one">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-block btn-success waves-effect waves-light"><i class="mdi mdi-camera"></i></button>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <img class="img-fluid rounded" src="theme/img/Arac.jpg" alt="image" width="300">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-4 px-1">
+                            <div class="form-group mb-3 px-0">
+                                <input type="text" maxlength="2" size="2" class="form-control" ng-model = "PlakaBas" placeholder="34" style="text-transform:uppercase">
+                            </div>
+                        </div>
+                        <div class="col-4 px-1">
+                            <div class="form-group mb-3 px-0">
+                                <input type="text" maxlength="4" size="4" class="form-control" ng-model = "PlakaOrta" placeholder="ABC" style="text-transform:uppercase">
+                            </div>
+                        </div>
+                        <div class="col-4 px-1">
+                            <div class="form-group mb-3 px-0">
+                                <input type="text" maxlength="4" size="4" class="form-control" ng-model = "PlakaSon" placeholder="3434" style="text-transform:uppercase">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" ng-click = "New()" class="btn btn-block btn-success waves-effect waves-light">Yeni</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" ng-click = "BtnKaydet()" class="btn btn-block btn-success waves-effect waves-light">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
